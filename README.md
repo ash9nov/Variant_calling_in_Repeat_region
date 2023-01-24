@@ -1,5 +1,11 @@
 # Variant_calling_in_Repeat_region
 
+## Decision tree for calling the variant 
+
+![Algorithm_decison_tree](https://user-images.githubusercontent.com/8995865/214290270-fdb0200c-4d04-4d31-99b9-43b78d1d8cb9.png)
+
+## Steps to call the variant
+
 1. First use GATK to get the base counts for each position in the capture regions \
     ` gatk DepthOfCoverage -R ${reference.fasta} -I ${bam_file} -O ${sample_name}.DepthOfCoverage.txt -L calling_region.interval_list --print-base-counts true `
 
